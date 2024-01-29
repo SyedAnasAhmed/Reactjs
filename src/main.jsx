@@ -83,3 +83,25 @@ function App() {
 }
 
 export default App
+
+
+
+
+function muaz (){
+  ausasjaiojsaiosja
+];a][dl]adla]sla;
+muaz k sath code add l
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
