@@ -3,6 +3,8 @@
 // import viteLogo from '/vite.svg'
 // import './App.css'
 
+import { useState } from "react"
+
 // function App() {
 //   const [count, setCount] = useState(0)
 
@@ -35,24 +37,36 @@
 // export default App
 
 
-import React from "react"
-import Header from "./components/Header"
-import Footer from "./components/Footer"
-import "./App.css"
 
-function App() {
+function Counterfunc() {
 
-  const userName = "Jaffar Aman"
-  // const userName = false
+  let [counter, getcounter] = useState(0)
+
+  // const state = useState(0)
+  // console.log(state)
+
+  var addfunc = () => {
+    getcounter(counter + 1)
+  }
+  var minusfunc = () => {
+    // if(counter > 0){
+    //   getcounter(counter - 1)
+    // }
+    // else{
+      
+    // }
+    getcounter(counter - 1)
+  }
+
+
 
   return (
-
     <>
-      <h1 className="helloworld"  >hello world {userName} </h1>
-      <h1>hello world</h1>
+      <h1>{counter}</h1>
+      <button onClick={addfunc}>Plus Counter</button>
+      <button onClick={minusfunc}>Minus Counter</button>
     </>
-
   )
 }
 
-export default App
+export default Counterfunc

@@ -1,7 +1,14 @@
-const Footer = () => {
-    return (
-        <h1>Footer</h1>
-    )
-}
+function Header() {
 
-export default Footer
+
+    return(
+      <>
+      <h1>Header</h1>
+      <h2>Hello Header</h2>
+      </>
+    )
+    
+  }
+  
+  
+  export default Header
