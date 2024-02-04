@@ -38,35 +38,68 @@ import { useState } from "react"
 
 
 
-function Counterfunc() {
+// function Counterfunc() {
 
-  let [counter, getcounter] = useState(0)
+//   let [counter, getcounter] = useState(0)
 
-  // const state = useState(0)
-  // console.log(state)
+//   // const state = useState(0)
+//   // console.log(state)
 
-  var addfunc = () => {
-    getcounter(counter + 1)
-  }
-  var minusfunc = () => {
-    // if(counter > 0){
-    //   getcounter(counter - 1)
-    // }
-    // else{
+//   var addfunc = () => {
+//     getcounter(counter + 1)
+//   }
+//   var minusfunc = () => {
+//     // if(counter > 0){
+//     //   getcounter(counter - 1)
+//     // }
+//     // else{
       
-    // }
-    getcounter(counter - 1)
+//     // }
+//     getcounter(counter - 1)
+//   }
+
+
+
+//   return (
+//     <>
+//       <h1>{counter}</h1>
+//       <button onClick={addfunc}>Plus Counter</button>
+//       <button onClick={minusfunc}>Minus Counter</button>
+//     </>
+//   )
+// }
+
+// export default Counterfunc
+
+
+
+function UseState (){
+
+  // console.log("anas")
+  
+  
+  // var username = "Anas";
+  
+  let [ username , getusername] = useState("Anas")
+
+  const changetxt = () => {
+      // console.log("changetxt")
+      // state = (getstate = "Anas ahmed")
+      // getstate = state = "Anas Ahmed"
+      // console.log("check")
+
+      getusername("Syed Anas Ahmed");
+
   }
 
 
-
-  return (
+  return(
     <>
-      <h1>{counter}</h1>
-      <button onClick={addfunc}>Plus Counter</button>
-      <button onClick={minusfunc}>Minus Counter</button>
+      <h1>Hello {username}</h1>
+      <button onClick={changetxt}>Change Text</button>
+
     </>
   )
-}
-
-export default Counterfunc
+  }
+  
+  export default UseState

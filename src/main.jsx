@@ -1,9 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Body from './App'
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Counterfunc from './App';
+// import Body from './App'
+// import Header from './components/Header';
+// import Footer from './components/Footer';
+// import Counterfunc from './App';
+// import UseState from './App'
+import Learnprops from './components/Learnprops'
+
 
 // import App from './App.jsx'
 // import './index.css'
@@ -23,8 +26,12 @@ createRoot.render(
     {/* <Header />
     <Body />
     <Footer /> */}
+    {/* <Counterfunc/> */}
+    {/* <UseState/> */}
+    
 
-  <Counterfunc/>
+    <Learnprops/>
+
 
 
 
